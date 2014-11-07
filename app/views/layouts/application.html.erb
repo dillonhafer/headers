@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= content_for?(:title) ? yield(:title)+" | Dwelling Society" : "Dwelling Society" %></title>
+    <%= render partial: 'shared/head' %>
+  </head>
+  <body>
+    <div class="row" id="main">    
+      <%= yield %>
+    </div>
+    
+    <%= javascript_include_tag "application" %>    
+  </body>
+</html>

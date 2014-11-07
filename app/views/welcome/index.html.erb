@@ -1,0 +1,14 @@
+<br />
+<div class='large-12 columns'>
+  <ul class='large-block-grid-3 small-block-grid-1'>
+      <% request.headers.each do |header| %>
+        <li>
+          <ul class='pricing-table'>
+            <li class='title'><%= header[0] %></li>
+            <li class='bullet-item'><%= truncate header[1].to_s %></li>
+          </ul>
+        </li>
+      <% end %>
+    </tbody>
+  </ul>
+</div>
