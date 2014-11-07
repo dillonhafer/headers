@@ -2,6 +2,6 @@
 
 This application is for inspecting your HTTP headers.
 
-You can view them at: http://i-headers.herokuapp.com
+You can view them at: http://h-inspect.herokuapp.com
 
 This allows you to check for things like AT&T's HTTP_X_ACR header or Verizon's HTTP_X_UDID header
