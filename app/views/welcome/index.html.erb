@@ -4,7 +4,7 @@
       <% request.headers.each do |header| %>
         <li>
           <ul class='pricing-table'>
-            <li class='title'><%= header[0] %></li>
+            <li class='title'><%= truncate header[0].to_s %></li>
             <li class='bullet-item'><%= truncate header[1].to_s %></li>
           </ul>
         </li>
